@@ -21,14 +21,23 @@ class LibraryDemo{
 		b1.checkOut();
 		b1.checkIn();
 
-		LibraryItem[] libraryItems = {b1,b2,b3,b4,b5};
+		Book[] books = {b1,b2,b3,b4,b5};
+		Magazine[] magazines = {m1,m2,m3,m4,m5};
 		LibraryMember[] libraryMembers = {mem1,mem2,mem3,mem4,mem5};
-
 
 		System.out.println("Library Items:");
 		System.out.println("-----------------------");
-		for(LibraryItem item : libraryItems){
-			item.displayItemDetails();
+		System.out.println("Books:");
+		System.out.println("-----------------------");
+		for(Book book : books){
+			book.displayItemDetails();
+			System.out.println();
+		}
+
+		System.out.println("Magazines:");
+		System.out.println("-----------------------");
+		for(Magazine magazine : magazines){
+			magazine.displayItemDetails();
 			System.out.println();
 		}
 
